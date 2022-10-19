@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">a04_practica4_quizzes</string>
+    <string name="pregunta">PREGUNTA</string>
+    <string name="respuesta">Respuesta</string>
+</resources>
