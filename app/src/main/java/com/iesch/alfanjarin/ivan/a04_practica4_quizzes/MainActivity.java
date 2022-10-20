@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 abrirResultado(pregunta, acierto.get(), finalContador);
             }else{
-                Toast selecciona = Toast.makeText(this, "Selecciona una respuesta", Toast.LENGTH_SHORT);
+                Toast selecciona = Toast.makeText(this, R.string.toast, Toast.LENGTH_SHORT);
                 selecciona.show();
             }
         });

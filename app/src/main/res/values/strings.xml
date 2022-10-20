@@ -29,4 +29,5 @@
     <string name="respuestaB3">7</string>
     <string name="respuestaC3">2</string>
     <string name="respuestaD3">1</string>
+    <string name="toast">Select an answer</string>
 </resources>
