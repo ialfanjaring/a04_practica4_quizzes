@@ -2,4 +2,11 @@
     <string name="app_name">a04_practica4_quizzes</string>
     <string name="pregunta">PREGUNTA</string>
     <string name="respuesta">Respuesta</string>
+    <string name="numero">0/3</string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+    <string name="d">D</string>
+    <string name="acierto">Acierto</string>
+    <string name="continuar">Continuar</string>
 </resources>
