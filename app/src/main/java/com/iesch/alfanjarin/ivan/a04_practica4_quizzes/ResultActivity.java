@@ -20,19 +20,40 @@ public class ResultActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         Bundle extras = getIntent().getExtras();
-
-        String pregunta = extras.getString("pregunta");
-        binding.preguntaTxt.setText(pregunta);
         int contador = extras.getInt("contador");
         boolean acierto = extras.getBoolean("acierto");
-        if (acierto){
-            binding.aciertoTxt.setText(correcto);
+        if(contador == 4){
+            binding.preguntaTxt.setText(R.string.felicidades);
+            binding.aciertoTxt.setText(R.string.yaTerminasteTodasLasPreguntas);
+            binding.continuarBtn.setText(R.string.repetir);
+            binding.continuarBtn.setOnClickListener(v -> {
+                abrirMain(0);
+            });
+
         }else {
-            binding.aciertoTxt.setText(R.string.incorrecto);
+            String pregunta = extras.getString("pregunta");
+            binding.preguntaTxt.setText(pregunta);
+
+            if (acierto) {
+                binding.aciertoTxt.setText(correcto);
+            } else {
+                binding.aciertoTxt.setText(R.string.incorrecto);
+            }
+            binding.continuarBtn.setOnClickListener(v -> {
+                if(contador == 3){
+                    abrirResult(contador);
+                }else {
+                    abrirMain(contador);
+                }
+            });
         }
-        binding.continuarBtn.setOnClickListener(v -> {
-            abrirMain(contador);
-                });
+    }
+
+    private void abrirResult(int contador) {
+        Intent iraResult = new Intent(this,ResultActivity.class);
+        contador++;
+        iraResult.putExtra("contador", contador);
+        startActivity(iraResult);
     }
 
     private void abrirMain(int contador) {

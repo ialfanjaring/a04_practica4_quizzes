@@ -16,4 +16,12 @@
     <string name="respuestaD1">Mimikyu</string>
     <string name="correcto">CORRECTO</string>
     <string name="incorrecto">INCORRECTO</string>
+    <string name="felicidades">¡FELICIDADES!</string>
+    <string name="yaTerminasteTodasLasPreguntas">Ya terminaste todas las preguntas</string>
+    <string name="repetir">Repetir</string>
+    <string name="pregunta2">¿Cuál no es un formato del juego de cartas Magic The Gathering?</string>
+    <string name="respuestaA2">Commander</string>
+    <string name="respuestaB2">Digital</string>
+    <string name="respuestaC2">Estandar</string>
+    <string name="respuestaD2">Booster Draft</string>
 </resources>

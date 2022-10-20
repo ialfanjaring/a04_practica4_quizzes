@@ -2,8 +2,10 @@ package com.iesch.alfanjarin.ivan.a04_practica4_quizzes;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContextWrapper;
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.iesch.alfanjarin.ivan.a04_practica4_quizzes.databinding.ActivityMainBinding;
 
@@ -33,6 +35,20 @@ public class MainActivity extends AppCompatActivity {
             binding.radioC.setText(R.string.respuestaC1);
             binding.radioD.setText(R.string.respuestaD1);
             result = binding.radioC.getId();
+        }if(contador == 2){
+            binding.preguntaTxt.setText(R.string.pregunta2);
+            binding.radioA.setText(R.string.respuestaA2);
+            binding.radioB.setText(R.string.respuestaB2);
+            binding.radioC.setText(R.string.respuestaC2);
+            binding.radioD.setText(R.string.respuestaD2);
+            result = binding.radioB.getId();
+        }if(contador == 3){
+            binding.preguntaTxt.setText(R.string.pregunta1);
+            binding.radioA.setText(R.string.respuestaA1);
+            binding.radioB.setText(R.string.respuestaB1);
+            binding.radioC.setText(R.string.respuestaC1);
+            binding.radioD.setText(R.string.respuestaD1);
+            result = binding.radioC.getId();
         }
 
         //setContentView(R.layout.activity_main);
@@ -41,14 +57,19 @@ public class MainActivity extends AppCompatActivity {
 
         int finalContador = contador;
         binding.responderBtn.setOnClickListener(v -> {
-            String pregunta = binding.preguntaTxt.getText().toString();
-            int opcion = binding.radioGroup.getCheckedRadioButtonId();
-            if(finalResult == opcion){
-                acierto.set(true);
+            if(binding.radioGroup.getCheckedRadioButtonId()!=-1) {
+                String pregunta = binding.preguntaTxt.getText().toString();
+                int opcion = binding.radioGroup.getCheckedRadioButtonId();
+                if (finalResult == opcion) {
+                    acierto.set(true);
+                } else {
+                    acierto.set(false);
+                }
+                abrirResultado(pregunta, acierto.get(), finalContador);
             }else{
-                acierto.set(false);
+                Toast selecciona = Toast.makeText(this, "Selecciona una respuesta", Toast.LENGTH_SHORT);
+                selecciona.show();
             }
-            abrirResultado(pregunta, acierto.get(), finalContador);
         });
     }
 
