@@ -9,4 +9,11 @@
     <string name="d">D</string>
     <string name="acierto">Acierto</string>
     <string name="continuar">Continuar</string>
+    <string name="pregunta1">¿Qué pokemon no tiene debilidades?</string>
+    <string name="respuestaA1">Gastrodon</string>
+    <string name="respuestaB1">Elekid</string>
+    <string name="respuestaC1">Eelektross</string>
+    <string name="respuestaD1">Mimikyu</string>
+    <string name="correcto">CORRECTO</string>
+    <string name="incorrecto">INCORRECTO</string>
 </resources>
