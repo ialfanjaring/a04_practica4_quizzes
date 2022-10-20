@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">a04_practica4_quizzes</string>
+    <string name="app_name">PREGUNTAS</string>
     <string name="pregunta">PREGUNTA</string>
     <string name="respuesta">Respuesta</string>
     <string name="numero">0/3</string>
@@ -24,4 +24,9 @@
     <string name="respuestaB2">Digital</string>
     <string name="respuestaC2">Estandar</string>
     <string name="respuestaD2">Booster Draft</string>
+    <string name="pregunta3">En el juego de mesa Catan, ¿qué número es imposible usar en la partida?</string>
+    <string name="respuestaA3">6</string>
+    <string name="respuestaB3">7</string>
+    <string name="respuestaC3">2</string>
+    <string name="respuestaD3">1</string>
 </resources>

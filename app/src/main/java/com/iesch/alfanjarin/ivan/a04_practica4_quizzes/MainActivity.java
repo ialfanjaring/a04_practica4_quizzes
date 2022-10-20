@@ -43,12 +43,12 @@ public class MainActivity extends AppCompatActivity {
             binding.radioD.setText(R.string.respuestaD2);
             result = binding.radioB.getId();
         }if(contador == 3){
-            binding.preguntaTxt.setText(R.string.pregunta1);
-            binding.radioA.setText(R.string.respuestaA1);
-            binding.radioB.setText(R.string.respuestaB1);
-            binding.radioC.setText(R.string.respuestaC1);
-            binding.radioD.setText(R.string.respuestaD1);
-            result = binding.radioC.getId();
+            binding.preguntaTxt.setText(R.string.pregunta3);
+            binding.radioA.setText(R.string.respuestaA3);
+            binding.radioB.setText(R.string.respuestaB3);
+            binding.radioC.setText(R.string.respuestaC3);
+            binding.radioD.setText(R.string.respuestaD3);
+            result = binding.radioD.getId();
         }
 
         //setContentView(R.layout.activity_main);
